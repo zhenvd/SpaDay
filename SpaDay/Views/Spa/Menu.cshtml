@@ -17,23 +17,24 @@
 
     <h5>Facial Treatments</h5>
     <p>Your @ViewBag.skintype skin type is best suited to the follow facial types:</p>
-    
+
     <ul>
-        @foreach(string facial in ViewBag.appropriateFacials)
-            {
-                <li>@facial</li>
-            }
+        @foreach (string facial in ViewBag.appropriateFacials)
+        {
+            <li>@facial</li>
+        }
     </ul>
 
     <h5>Nail Services</h5>
-    @if(ViewBag.manipedi == "manicure")
-            {
-                <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
-            }
-            else
-            {
-                <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
-            }
+    @if (ViewBag.manipedi == "manicure")
+    {
+        <p>Our manicure is a great way to spend 30 minutes of your day! We use shea butter hand cream and the finest gel polish.</p>
+    }
+    else
+    {
+        <p>Relax for 45 minutes in pure luxury! Our massage chairs and experienced nail techs are here to get your feet in shape for sandal season!</p>
+    }
     @*TODO: display a description for the nail service selected*@
 
 </div>
+
