@@ -31,14 +31,14 @@ namespace SpaDay.Controllers
             return true;
 
         }
-
+        [Route("/spa/form")]
         public IActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        [Route("/spa")]
+        [Route("/spa/")]
         public IActionResult Menu(string name, string skintype, string manipedi)
         {
             List<string> facials = new List<string>()
